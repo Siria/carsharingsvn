@@ -3,55 +3,19 @@ package carsharing;
 
 public class Noleggio {
 
-	/**
-	 * @uml.property  name="garage"
-	 * @uml.associationEnd  multiplicity="(1 1)" inverse="noleggio:carsharing.Garage"
-	 * @uml.association  name="presaInConsegna"
+	/** 
+	 * @uml.property name="garageIniziale"
+	 * @uml.associationEnd multiplicity="(1 1)" inverse="noleggio:carsharing.Garage"
+	 * @uml.association name="presaInConsegna"
 	 */
 	private Garage garage = new carsharing.Garage();
 
-	/**
-	 * Getter of the property <tt>garage</tt>
-	 * @return  Returns the garage.
-	 * @uml.property  name="garage"
-	 */
-	public Garage getGarage() {
-		return garage;
-	}
-
-	/**
-	 * Setter of the property <tt>garage</tt>
-	 * @param garage  The garage to set.
-	 * @uml.property  name="garage"
-	 */
-	public void setGarage(Garage garage) {
-		this.garage = garage;
-	}
-
-	/**
-	 * @uml.property  name="garage1"
-	 * @uml.associationEnd  multiplicity="(1 1)" inverse="noleggio1:carsharing.Garage"
-	 * @uml.association  name="rilascio"
+	/** 
+	 * @uml.property name="garageFinale"
+	 * @uml.associationEnd multiplicity="(1 1)" inverse="noleggio1:carsharing.Garage"
+	 * @uml.association name="rilascio"
 	 */
 	private Garage garage1 = new carsharing.Garage();
-
-	/**
-	 * Getter of the property <tt>garage1</tt>
-	 * @return  Returns the garage1.
-	 * @uml.property  name="garage1"
-	 */
-	public Garage getGarage1() {
-		return garage1;
-	}
-
-	/**
-	 * Setter of the property <tt>garage1</tt>
-	 * @param garage1  The garage1 to set.
-	 * @uml.property  name="garage1"
-	 */
-	public void setGarage1(Garage garage1) {
-		this.garage1 = garage1;
-	}
 
 	/**
 	 * @uml.property  name="socio"
@@ -78,17 +42,17 @@ public class Noleggio {
 	}
 
 	/**
-	 * @uml.property  name="automobile"
-	 * @uml.associationEnd  multiplicity="(1 1)" inverse="noleggio:carsharing.Automobile"
+	 * @uml.property   name="automobile"
+	 * @uml.associationEnd   multiplicity="(1 1)" inverse="noleggio:carsharing.Auto"
 	 */
-	private Automobile automobile = new carsharing.Automobile();
+	private Auto automobile = new carsharing.Auto();
 
 	/**
 	 * Getter of the property <tt>automobile</tt>
 	 * @return  Returns the automobile.
 	 * @uml.property  name="automobile"
 	 */
-	public Automobile getAutomobile() {
+	public Auto getAutomobile() {
 		return automobile;
 	}
 
@@ -97,8 +61,44 @@ public class Noleggio {
 	 * @param automobile  The automobile to set.
 	 * @uml.property  name="automobile"
 	 */
-	public void setAutomobile(Automobile automobile) {
+	public void setAutomobile(Auto automobile) {
 		this.automobile = automobile;
+	}
+
+	/**
+	 * Getter of the property <tt>garageIniziale</tt>
+	 * @return  Returns the garage.
+	 * @uml.property  name="garageIniziale"
+	 */
+	public Garage getGarageIniziale() {
+		return garage;
+	}
+
+	/**
+	 * Setter of the property <tt>garageIniziale</tt>
+	 * @param garageIniziale  The garage to set.
+	 * @uml.property  name="garageIniziale"
+	 */
+	public void setGarageIniziale(Garage garageIniziale) {
+		garage = garageIniziale;
+	}
+
+	/**
+	 * Getter of the property <tt>garageFinale</tt>
+	 * @return  Returns the garage1.
+	 * @uml.property  name="garageFinale"
+	 */
+	public Garage getGarageFinale() {
+		return garage1;
+	}
+
+	/**
+	 * Setter of the property <tt>garageFinale</tt>
+	 * @param garageFinale  The garage1 to set.
+	 * @uml.property  name="garageFinale"
+	 */
+	public void setGarageFinale(Garage garageFinale) {
+		garage1 = garageFinale;
 	}
 
 }

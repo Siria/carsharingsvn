@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="CarSharingBase" size="743,331" id="" metadata="uml2-1.0" initialized="true" scrolledY="356" tag="1000" key="32303037303533312D313030302043617253686172696E67426173652F616C657373616E647261">
-  <children xsi:type="editmodel:PackageEditModel" name="carsharing" location="5,20" size="636,741" id="carsharing">
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="CarSharingBase" size="743,331" id="" metadata="uml2-1.0" initialized="true" scrolledY="301" tag="1000" key="32303037303533312D313030302043617253686172696E67426173652F616C657373616E647261">
+  <children xsi:type="editmodel:PackageEditModel" name="carsharing" location="10,0" size="691,751" id="carsharing">
     <children xsi:type="editmodel:ClassEditModel" name="Categoria" location="500,572" size="116,30" id="carsharing/Categoria" runTimeClassModel="">
       <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
       <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
       <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
-      <sourceConnections xsi:type="editmodel:AssociationEditModel" name="appartieneAlla" autoLocated="true" id="carsharing/Automobile@automobile+carsharing/Categoria@categoria" source="//@children.0/@children.0" target="//@children.0/@children.4" targetEnd="//@children.0/@children.0/@sourceConnections.0/@children.1" label="//@children.0/@children.0/@sourceConnections.0/@children.2" sourceEnd="//@children.0/@children.0/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
-        <children xsi:type="editmodel:AssociationEndEditModel" name="categoria" location="0,12" id="carsharing/Automobile@automobile+carsharing/Categoria@categoria|carsharing/Categoria#categoria" attachSource="true" multiplicityLabel="//@children.0/@children.0/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.0/@children.0/@sourceConnections.0/@children.0/@children.0" navigable="true">
-          <children xsi:type="editmodel:LabelEditModel" name=" - categoria" location="385,584" size="62,13" anchorKind="FirstPart"/>
-          <children xsi:type="editmodel:LabelEditModel" name="1" location="440,611" size="7,13" anchorKind="FirstPart"/>
+      <sourceConnections xsi:type="editmodel:AssociationEditModel" name="appartieneAlla" autoLocated="true" id="carsharing/Categoria@categoria+carsharing/Auto@automobile" source="//@children.0/@children.0" target="//@children.0/@children.4" targetEnd="//@children.0/@children.0/@sourceConnections.0/@children.1" label="//@children.0/@children.0/@sourceConnections.0/@children.2" sourceEnd="//@children.0/@children.0/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+        <children xsi:type="editmodel:AssociationEndEditModel" name="categoria" location="0,12" id="carsharing/Categoria@categoria+carsharing/Auto@automobile|carsharing/Categoria#categoria" attachSource="true" multiplicityLabel="//@children.0/@children.0/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.0/@children.0/@sourceConnections.0/@children.0/@children.0" navigable="true">
+          <children xsi:type="editmodel:LabelEditModel" name=" - categoria" location="441,564" size="62,13" anchorKind="FirstPart"/>
+          <children xsi:type="editmodel:LabelEditModel" name="1" location="496,591" size="7,13" anchorKind="FirstPart"/>
         </children>
-        <children xsi:type="editmodel:AssociationEndEditModel" name="automobile" location="128,16" id="carsharing/Automobile@automobile+carsharing/Categoria@categoria|carsharing/Automobile#automobile" multiplicityLabel="//@children.0/@children.0/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.0/@children.0/@sourceConnections.0/@children.1/@children.0" navigable="true" orderingKind="1">
-          <children xsi:type="editmodel:LabelEditModel" name=" - automobile" location="324,584" size="72,13" anchorKind="LastPart"/>
-          <children xsi:type="editmodel:LabelEditModel" name="*" location="324,611" size="5,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" name="automobile" location="76,16" id="carsharing/Categoria@categoria+carsharing/Auto@automobile|carsharing/Auto#automobile" multiplicityLabel="//@children.0/@children.0/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.0/@children.0/@sourceConnections.0/@children.1/@children.0" navigable="true" orderingKind="1">
+          <children xsi:type="editmodel:LabelEditModel" name=" + automobile" location="277,564" size="77,13" anchorKind="LastPart"/>
+          <children xsi:type="editmodel:LabelEditModel" name="*" location="277,591" size="5,13" anchorKind="LastPart"/>
         </children>
         <children xsi:type="editmodel:WireLabelEditModel" name="appartieneAlla" size="80,13" anchorKind="MiddlePart"/>
+      </sourceConnections>
+      <sourceConnections xsi:type="editmodel:AssociationEditModel" id="carsharing/Categoria@categoria+carsharing/CarSharing@carSharing" source="//@children.0/@children.0" target="//@children.0/@children.10" targetEnd="//@children.0/@children.0/@sourceConnections.1/@children.2" label="//@children.0/@children.0/@sourceConnections.1/@children.0" sourceEnd="//@children.0/@children.0/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+        <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" name="categoria" location="116,16" id="carsharing/Categoria@categoria+carsharing/CarSharing@carSharing|carsharing/Categoria#categoria" attachSource="true" multiplicityLabel="//@children.0/@children.0/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.0/@children.0/@sourceConnections.1/@children.1/@children.0" navigable="true" orderingKind="1">
+          <children xsi:type="editmodel:LabelEditModel" name=" - categoria" location="633,595" size="62,13" anchorKind="FirstPart"/>
+          <children xsi:type="editmodel:LabelEditModel" name="*" location="633,568" size="5,13" anchorKind="FirstPart"/>
+        </children>
+        <children xsi:type="editmodel:AssociationEndEditModel" name="carSharing" location="86,0" id="carsharing/Categoria@categoria+carsharing/CarSharing@carSharing|carsharing/CarSharing#carSharing"/>
       </sourceConnections>
       <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
     </children>
@@ -22,87 +30,97 @@
       <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
       <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
       <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
-      <sourceConnections xsi:type="editmodel:AssociationEditModel" name="lavora" autoLocated="true" id="carsharing/DipendenteSocieta@dipendenteSocieta+carsharing/Societa@societa" source="//@children.0/@children.1" target="//@children.0/@children.8" targetEnd="//@children.0/@children.1/@sourceConnections.0/@children.1" label="//@children.0/@children.1/@sourceConnections.0/@children.2" sourceEnd="//@children.0/@children.1/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
-        <children xsi:type="editmodel:AssociationEndEditModel" name="societa" location="48,0" id="carsharing/DipendenteSocieta@dipendenteSocieta+carsharing/Societa@societa|carsharing/Societa#societa" attachSource="true" multiplicityLabel="//@children.0/@children.1/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.0/@children.1/@sourceConnections.0/@children.0/@children.0" navigable="true">
-          <children xsi:type="editmodel:LabelEditModel" name=" - societa" location="250,334" size="50,13" anchorKind="FirstPart"/>
-          <children xsi:type="editmodel:LabelEditModel" name="1" location="229,334" size="7,13" anchorKind="FirstPart"/>
+      <sourceConnections xsi:type="editmodel:AssociationEditModel" name="lavora" autoLocated="true" id="carsharing/Societa@societa+carsharing/DipendenteSocieta@dipendenteSocieta" source="//@children.0/@children.1" target="//@children.0/@children.8" targetEnd="//@children.0/@children.1/@sourceConnections.0/@children.1" label="//@children.0/@children.1/@sourceConnections.0/@children.2" sourceEnd="//@children.0/@children.1/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+        <children xsi:type="editmodel:AssociationEndEditModel" name="societa" location="48,0" id="carsharing/Societa@societa+carsharing/DipendenteSocieta@dipendenteSocieta|carsharing/Societa#societa" attachSource="true" multiplicityLabel="//@children.0/@children.1/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.0/@children.1/@sourceConnections.0/@children.0/@children.0" navigable="true">
+          <children xsi:type="editmodel:LabelEditModel" name=" - societa" location="255,314" size="50,13" anchorKind="FirstPart"/>
+          <children xsi:type="editmodel:LabelEditModel" name="1" location="234,314" size="7,13" anchorKind="FirstPart"/>
         </children>
-        <children xsi:type="editmodel:AssociationEndEditModel" name="dipendenteSocieta" location="122,30" id="carsharing/DipendenteSocieta@dipendenteSocieta+carsharing/Societa@societa|carsharing/DipendenteSocieta#dipendenteSocieta" multiplicityLabel="//@children.0/@children.1/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.0/@children.1/@sourceConnections.0/@children.1/@children.0" navigable="true" orderingKind="1">
-          <children xsi:type="editmodel:LabelEditModel" name=" - dipendenteSocieta" location="250,280" size="114,13" anchorKind="LastPart"/>
-          <children xsi:type="editmodel:LabelEditModel" name="*" location="231,280" size="5,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" name="dipendenteSocieta" location="122,30" id="carsharing/Societa@societa+carsharing/DipendenteSocieta@dipendenteSocieta|carsharing/DipendenteSocieta#dipendenteSocieta" multiplicityLabel="//@children.0/@children.1/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.0/@children.1/@sourceConnections.0/@children.1/@children.0" navigable="true" orderingKind="1">
+          <children xsi:type="editmodel:LabelEditModel" name=" + dipendenteSocieta" location="255,260" size="119,13" anchorKind="LastPart"/>
+          <children xsi:type="editmodel:LabelEditModel" name="*" location="236,260" size="5,13" anchorKind="LastPart"/>
         </children>
         <children xsi:type="editmodel:WireLabelEditModel" name="lavora" size="34,13" anchorKind="MiddlePart"/>
       </sourceConnections>
       <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
     </children>
-    <children xsi:type="editmodel:ClassEditModel" name="Garage" location="508,427" size="97,30" id="carsharing/Garage" runTimeClassModel="">
+    <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@children.10/@sourceConnections.0" name="Garage" location="508,427" size="97,30" id="carsharing/Garage" runTimeClassModel="">
       <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
       <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
       <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
-      <sourceConnections xsi:type="editmodel:AssociationEditModel" name="presaInConsegna" autoLocated="true" id="carsharing/Noleggio@noleggio+carsharing/Garage@garage" source="//@children.0/@children.2" target="//@children.0/@children.3" targetEnd="//@children.0/@children.2/@sourceConnections.0/@children.1" label="//@children.0/@children.2/@sourceConnections.0/@children.2" sourceEnd="//@children.0/@children.2/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
-        <children xsi:type="editmodel:AssociationEndEditModel" name="garage" location="0,18" id="carsharing/Noleggio@noleggio+carsharing/Garage@garage|carsharing/Garage#garage" attachSource="true" multiplicityLabel="//@children.0/@children.2/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.0/@children.2/@sourceConnections.0/@children.0/@children.0" navigable="true">
-          <children xsi:type="editmodel:LabelEditModel" name=" - garage" location="417,445" size="49,13" anchorKind="FirstPart"/>
-          <children xsi:type="editmodel:LabelEditModel" name="1" location="459,472" size="7,13" anchorKind="FirstPart"/>
+      <sourceConnections xsi:type="editmodel:AssociationEditModel" name="presaInConsegna" id="carsharing/Noleggio@noleggio+carsharing/Garage@garageIniziale" source="//@children.0/@children.2" target="//@children.0/@children.3" targetEnd="//@children.0/@children.2/@sourceConnections.0/@children.1" label="//@children.0/@children.2/@sourceConnections.0/@children.2" sourceEnd="//@children.0/@children.2/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+        <children xsi:type="editmodel:AssociationEndEditModel" name="garageIniziale" location="0,22" id="carsharing/Noleggio@noleggio+carsharing/Garage@garageIniziale|carsharing/Garage#garageIniziale" attachSource="true" multiplicityLabel="//@children.0/@children.2/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.0/@children.2/@sourceConnections.0/@children.0/@children.0" navigable="true">
+          <children xsi:type="editmodel:LabelEditModel" name=" + garageIniziale" location="418,456" size="93,13" anchorKind="FirstPart"/>
+          <children xsi:type="editmodel:LabelEditModel" name="1" location="504,429" size="7,13" anchorKind="FirstPart"/>
         </children>
-        <children xsi:type="editmodel:AssociationEndEditModel" name="noleggio" location="110,12" id="carsharing/Noleggio@noleggio+carsharing/Garage@garage|carsharing/Noleggio#noleggio" multiplicityLabel="//@children.0/@children.2/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.0/@children.2/@sourceConnections.0/@children.1/@children.0" navigable="true" orderingKind="1">
-          <children xsi:type="editmodel:LabelEditModel" name=" - noleggio" location="189,445" size="58,13" anchorKind="LastPart"/>
-          <children xsi:type="editmodel:LabelEditModel" name="*" location="189,472" size="5,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" name="noleggio" location="110,12" id="carsharing/Noleggio@noleggio+carsharing/Garage@garageIniziale|carsharing/Noleggio#noleggio" multiplicityLabel="//@children.0/@children.2/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.0/@children.2/@sourceConnections.0/@children.1/@children.0" navigable="true" orderingKind="1">
+          <children xsi:type="editmodel:LabelEditModel" name=" - noleggio" location="194,425" size="58,13" anchorKind="LastPart"/>
+          <children xsi:type="editmodel:LabelEditModel" name="*" location="194,452" size="5,13" anchorKind="LastPart"/>
         </children>
         <children xsi:type="editmodel:WireLabelEditModel" name="presaInConsegna" size="96,13" anchorKind="MiddlePart"/>
       </sourceConnections>
-      <sourceConnections xsi:type="editmodel:AssociationEditModel" name="rilascio" id="carsharing/Noleggio@noleggio1+carsharing/Garage@garage1" source="//@children.0/@children.2" target="//@children.0/@children.3" targetEnd="//@children.0/@children.2/@sourceConnections.1/@children.1" label="//@children.0/@children.2/@sourceConnections.1/@children.2" sourceEnd="//@children.0/@children.2/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
-        <children xsi:type="editmodel:AssociationEndEditModel" name="garage1" location="8,30" id="carsharing/Noleggio@noleggio1+carsharing/Garage@garage1|carsharing/Garage#garage1" attachSource="true" multiplicityLabel="//@children.0/@children.2/@sourceConnections.1/@children.0/@children.1" roleLabel="//@children.0/@children.2/@sourceConnections.1/@children.0/@children.0" navigable="true">
-          <children xsi:type="editmodel:LabelEditModel" name=" - garage1" location="488,484" size="56,13" anchorKind="FirstPart"/>
-          <children xsi:type="editmodel:LabelEditModel" name="1" location="467,484" size="7,13" anchorKind="FirstPart"/>
+      <sourceConnections xsi:type="editmodel:AssociationEditModel" name="rilascio" id="carsharing/Noleggio@noleggio1+carsharing/Garage@garageFinale" source="//@children.0/@children.2" target="//@children.0/@children.3" targetEnd="//@children.0/@children.2/@sourceConnections.1/@children.1" label="//@children.0/@children.2/@sourceConnections.1/@children.2" sourceEnd="//@children.0/@children.2/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+        <children xsi:type="editmodel:AssociationEndEditModel" name="garageFinale" location="5,0" id="carsharing/Noleggio@noleggio1+carsharing/Garage@garageFinale|carsharing/Garage#garageFinale" attachSource="true" multiplicityLabel="//@children.0/@children.2/@sourceConnections.1/@children.0/@children.1" roleLabel="//@children.0/@children.2/@sourceConnections.1/@children.0/@children.0" navigable="true">
+          <children xsi:type="editmodel:LabelEditModel" name=" + garageFinale" location="530,407" size="86,13" anchorKind="FirstPart"/>
+          <children xsi:type="editmodel:LabelEditModel" name="1" location="509,407" size="7,13" anchorKind="FirstPart"/>
         </children>
-        <children xsi:type="editmodel:AssociationEndEditModel" name="noleggio1" location="96,30" id="carsharing/Noleggio@noleggio1+carsharing/Garage@garage1|carsharing/Noleggio#noleggio1" multiplicityLabel="//@children.0/@children.2/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.0/@children.2/@sourceConnections.1/@children.1/@children.0" navigable="true" orderingKind="1">
-          <children xsi:type="editmodel:LabelEditModel" name=" - noleggio1" location="96,490" size="65,13" anchorKind="LastPart"/>
-          <children xsi:type="editmodel:LabelEditModel" name="*" location="175,490" size="5,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" name="noleggio1" location="96,0" id="carsharing/Noleggio@noleggio1+carsharing/Garage@garageFinale|carsharing/Noleggio#noleggio1" multiplicityLabel="//@children.0/@children.2/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.0/@children.2/@sourceConnections.1/@children.1/@children.0" navigable="true" orderingKind="1">
+          <children xsi:type="editmodel:LabelEditModel" name=" - noleggio1" location="101,413" size="65,13" anchorKind="LastPart"/>
+          <children xsi:type="editmodel:LabelEditModel" name="*" location="180,413" size="5,13" anchorKind="LastPart"/>
         </children>
         <children xsi:type="editmodel:WireLabelEditModel" name="rilascio" size="39,13" anchorKind="MiddlePart"/>
       </sourceConnections>
       <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
     </children>
-    <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@children.2/@sourceConnections.0 //@children.0/@children.7/@sourceConnections.0 //@children.0/@children.2/@sourceConnections.1 //@children.0/@children.4/@sourceConnections.0" name="Noleggio" location="67,433" size="110,30" id="carsharing/Noleggio" runTimeClassModel="">
+    <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@children.2/@sourceConnections.0 //@children.0/@children.2/@sourceConnections.1 //@children.0/@children.7/@sourceConnections.1 //@children.0/@children.4/@sourceConnections.0" name="Noleggio" location="67,433" size="110,30" id="carsharing/Noleggio" runTimeClassModel="">
       <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
       <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
       <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
       <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
     </children>
-    <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@children.0/@sourceConnections.0 //@children.0/@children.6/@sourceConnections.0" name="Automobile" location="184,568" size="128,30" id="carsharing/Automobile" runTimeClassModel="">
+    <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@children.0/@sourceConnections.0 //@children.0/@children.6/@sourceConnections.0" name="Auto" location="184,568" size="76,30" id="carsharing/Auto" runTimeClassModel="">
       <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
       <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
       <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
-      <sourceConnections xsi:type="editmodel:AssociationEditModel" id="carsharing/Noleggio@noleggio+carsharing/Automobile@automobile" source="//@children.0/@children.4" target="//@children.0/@children.3" targetEnd="//@children.0/@children.4/@sourceConnections.0/@children.1" label="//@children.0/@children.4/@sourceConnections.0/@children.2" sourceEnd="//@children.0/@children.4/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
-        <children xsi:type="editmodel:AssociationEndEditModel" name="automobile" location="0,10" id="carsharing/Noleggio@noleggio+carsharing/Automobile@automobile|carsharing/Automobile#automobile" attachSource="true" multiplicityLabel="//@children.0/@children.4/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.0/@children.4/@sourceConnections.0/@children.0/@children.0" navigable="true">
-          <children xsi:type="editmodel:LabelEditModel" name=" - automobile" location="110,605" size="72,13" anchorKind="FirstPart"/>
-          <children xsi:type="editmodel:LabelEditModel" name="1" location="175,578" size="7,13" anchorKind="FirstPart"/>
+      <sourceConnections xsi:type="editmodel:AssociationEditModel" id="carsharing/Auto@automobile+carsharing/Noleggio@noleggio" source="//@children.0/@children.4" target="//@children.0/@children.3" targetEnd="//@children.0/@children.4/@sourceConnections.0/@children.1" label="//@children.0/@children.4/@sourceConnections.0/@children.2" sourceEnd="//@children.0/@children.4/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+        <children xsi:type="editmodel:AssociationEndEditModel" name="automobile" location="0,10" id="carsharing/Auto@automobile+carsharing/Noleggio@noleggio|carsharing/Auto#automobile" attachSource="true" multiplicityLabel="//@children.0/@children.4/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.0/@children.4/@sourceConnections.0/@children.0/@children.0" navigable="true">
+          <children xsi:type="editmodel:LabelEditModel" name=" - automobile" location="115,585" size="72,13" anchorKind="FirstPart"/>
+          <children xsi:type="editmodel:LabelEditModel" name="1" location="180,558" size="7,13" anchorKind="FirstPart"/>
         </children>
-        <children xsi:type="editmodel:AssociationEndEditModel" name="noleggio" location="8,30" id="carsharing/Noleggio@noleggio+carsharing/Automobile@automobile|carsharing/Noleggio#noleggio" multiplicityLabel="//@children.0/@children.4/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.0/@children.4/@sourceConnections.0/@children.1/@children.0" navigable="true" orderingKind="1">
-          <children xsi:type="editmodel:LabelEditModel" name=" - noleggio" location="15,490" size="58,13" anchorKind="LastPart"/>
-          <children xsi:type="editmodel:LabelEditModel" name="*" location="87,490" size="5,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" name="noleggio" location="8,30" id="carsharing/Auto@automobile+carsharing/Noleggio@noleggio|carsharing/Noleggio#noleggio" multiplicityLabel="//@children.0/@children.4/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.0/@children.4/@sourceConnections.0/@children.1/@children.0" navigable="true" orderingKind="1">
+          <children xsi:type="editmodel:LabelEditModel" name=" - noleggio" location="20,470" size="58,13" anchorKind="LastPart"/>
+          <children xsi:type="editmodel:LabelEditModel" name="*" location="92,470" size="5,13" anchorKind="LastPart"/>
         </children>
         <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
       </sourceConnections>
+      <sourceConnections xsi:type="editmodel:AssociationEditModel" id="carsharing/Auto@auto+carsharing/CarSharing@carSharing" source="//@children.0/@children.4" target="//@children.0/@children.10" targetEnd="//@children.0/@children.4/@sourceConnections.1/@children.2" label="//@children.0/@children.4/@sourceConnections.1/@children.0" sourceEnd="//@children.0/@children.4/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+        <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" name="auto" location="15,30" id="carsharing/Auto@auto+carsharing/CarSharing@carSharing|carsharing/Auto#auto" attachSource="true" multiplicityLabel="//@children.0/@children.4/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.0/@children.4/@sourceConnections.1/@children.1/@children.0" navigable="true" orderingKind="1">
+          <children xsi:type="editmodel:LabelEditModel" name=" - auto" location="216,605" size="35,13" anchorKind="FirstPart"/>
+          <children xsi:type="editmodel:LabelEditModel" name="*" location="197,605" size="5,13" anchorKind="FirstPart"/>
+        </children>
+        <children xsi:type="editmodel:AssociationEndEditModel" name="carSharing" location="12,30" id="carsharing/Auto@auto+carsharing/CarSharing@carSharing|carsharing/CarSharing#carSharing"/>
+      </sourceConnections>
       <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
     </children>
-    <children xsi:type="editmodel:ClassEditModel" name="Tradizionale" location="277,732" size="135,30" id="carsharing/Tradizionale" runTimeClassModel="">
+    <children xsi:type="editmodel:ClassEditModel" name="AutoTradizionale" location="247,675" size="169,30" id="carsharing/AutoTradizionale" runTimeClassModel="">
       <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
       <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
       <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
-      <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="carsharing/Automobile&lt;-carsharing/Tradizionale" source="//@children.0/@children.5" target="//@children.0/@children.6/@sourceConnections.0" targetEnd="//@children.0/@children.5/@sourceConnections.0/@children.1" sourceEnd="//@children.0/@children.5/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
-        <children xsi:type="editmodel:AssociationEndEditModel" location="124,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="carsharing/Auto&lt;-carsharing/AutoTradizionale" source="//@children.0/@children.5" target="//@children.0/@children.6/@sourceConnections.0" targetEnd="//@children.0/@children.5/@sourceConnections.0/@children.1" sourceEnd="//@children.0/@children.5/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+        <children xsi:type="editmodel:AssociationEndEditModel" location="95,0" anchorKind="FixedAtEdge" attachSource="true"/>
         <children xsi:type="editmodel:AssociationEndEditModel" location="0,-376" anchorKind="FixedAtEdge"/>
       </sourceConnections>
       <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
     </children>
-    <children xsi:type="editmodel:ClassEditModel" name="Ecocompatibile" location="72,730" size="158,30" id="carsharing/Ecocompatibile" runTimeClassModel="">
+    <children xsi:type="editmodel:ClassEditModel" name="AutoEcocompatibile" location="21,669" size="192,30" id="carsharing/AutoEcocompatibile" runTimeClassModel="">
       <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
       <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
       <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
-      <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.0/@children.5/@sourceConnections.0" id="carsharing/Automobile&lt;-carsharing/Ecocompatibile" source="//@children.0/@children.6" target="//@children.0/@children.4" targetEnd="//@children.0/@children.6/@sourceConnections.0/@children.1" sourceEnd="//@children.0/@children.6/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
-        <children xsi:type="editmodel:AssociationEndEditModel" location="24,0" anchorKind="FixedAtEdge" attachSource="true"/>
-        <children xsi:type="editmodel:AssociationEndEditModel" location="64,30" anchorKind="FixedAtEdge"/>
+      <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.0/@children.5/@sourceConnections.0" id="carsharing/Auto&lt;-carsharing/AutoEcocompatibile" source="//@children.0/@children.6" target="//@children.0/@children.4" targetEnd="//@children.0/@children.6/@sourceConnections.0/@children.1" sourceEnd="//@children.0/@children.6/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+        <children xsi:type="editmodel:AssociationEndEditModel" location="96,0" anchorKind="FixedAtEdge" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="38,30" anchorKind="FixedAtEdge"/>
+        <bendpoints secondRelativeDimension="-100,41" firstRelativeDimension="0,-22"/>
+        <bendpoints secondRelativeDimension="1,40" firstRelativeDimension="101,-23"/>
       </sourceConnections>
       <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
     </children>
@@ -110,14 +128,24 @@
       <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
       <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
       <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
-      <sourceConnections xsi:type="editmodel:AssociationEditModel" id="carsharing/Noleggio@noleggio+carsharing/Socio@socio" source="//@children.0/@children.7" target="//@children.0/@children.3" targetEnd="//@children.0/@children.7/@sourceConnections.0/@children.1" label="//@children.0/@children.7/@sourceConnections.0/@children.2" sourceEnd="//@children.0/@children.7/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
-        <children xsi:type="editmodel:AssociationEndEditModel" name="socio" location="0,22" id="carsharing/Noleggio@noleggio+carsharing/Socio@socio|carsharing/Socio#socio" attachSource="true" multiplicityLabel="//@children.0/@children.7/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.0/@children.7/@sourceConnections.0/@children.0/@children.0" navigable="true">
-          <children xsi:type="editmodel:LabelEditModel" name=" - socio" location="308,134" size="39,13" anchorKind="FirstPart"/>
-          <children xsi:type="editmodel:LabelEditModel" name="1" location="340,161" size="7,13" anchorKind="FirstPart"/>
+      <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="carsharing/Socio@socio+carsharing/CarSharing@carSharing" source="//@children.0/@children.7" target="//@children.0/@children.10" targetEnd="//@children.0/@children.7/@sourceConnections.0/@children.1" label="//@children.0/@children.7/@sourceConnections.0/@children.2" sourceEnd="//@children.0/@children.7/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+        <children xsi:type="editmodel:AssociationEndEditModel" name="socio" location="10,0" id="carsharing/Socio@socio+carsharing/CarSharing@carSharing|carsharing/Socio#socio" attachSource="true" multiplicityLabel="//@children.0/@children.7/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.0/@children.7/@sourceConnections.0/@children.0/@children.0" navigable="true">
+          <children xsi:type="editmodel:LabelEditModel" name=" - socio" location="376,92" size="39,13" anchorKind="FirstPart"/>
+          <children xsi:type="editmodel:LabelEditModel" name="0..1" location="342,92" size="20,13" anchorKind="FirstPart"/>
         </children>
-        <children xsi:type="editmodel:AssociationEndEditModel" name="noleggio" location="0,6" id="carsharing/Noleggio@noleggio+carsharing/Socio@socio|carsharing/Noleggio#noleggio" multiplicityLabel="//@children.0/@children.7/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.0/@children.7/@sourceConnections.0/@children.1/@children.0" navigable="true" orderingKind="1">
-          <children xsi:type="editmodel:LabelEditModel" name=" - noleggio" location="7,466" size="58,13" anchorKind="LastPart"/>
-          <children xsi:type="editmodel:LabelEditModel" name="*" location="60,439" size="5,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" name="carSharing" location="127,20" id="carsharing/Socio@socio+carsharing/CarSharing@carSharing|carsharing/CarSharing#carSharing" orderingLabel="//@children.0/@children.7/@sourceConnections.0/@children.1/@children.0">
+          <children xsi:type="editmodel:LabelEditModel" name="{order}" location="178,78" size="43,13" anchorKind="LastPart"/>
+        </children>
+        <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      </sourceConnections>
+      <sourceConnections xsi:type="editmodel:AssociationEditModel" id="carsharing/Socio@socio+carsharing/Noleggio@noleggio" source="//@children.0/@children.7" target="//@children.0/@children.3" targetEnd="//@children.0/@children.7/@sourceConnections.1/@children.1" label="//@children.0/@children.7/@sourceConnections.1/@children.2" sourceEnd="//@children.0/@children.7/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+        <children xsi:type="editmodel:AssociationEndEditModel" name="socio" location="0,22" id="carsharing/Socio@socio+carsharing/Noleggio@noleggio|carsharing/Socio#socio" attachSource="true" multiplicityLabel="//@children.0/@children.7/@sourceConnections.1/@children.0/@children.1" roleLabel="//@children.0/@children.7/@sourceConnections.1/@children.0/@children.0" navigable="true">
+          <children xsi:type="editmodel:LabelEditModel" name=" - socio" location="313,114" size="39,13" anchorKind="FirstPart"/>
+          <children xsi:type="editmodel:LabelEditModel" name="1" location="345,141" size="7,13" anchorKind="FirstPart"/>
+        </children>
+        <children xsi:type="editmodel:AssociationEndEditModel" name="noleggio" location="0,6" id="carsharing/Socio@socio+carsharing/Noleggio@noleggio|carsharing/Noleggio#noleggio" multiplicityLabel="//@children.0/@children.7/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.0/@children.7/@sourceConnections.1/@children.1/@children.0" navigable="true" orderingKind="1">
+          <children xsi:type="editmodel:LabelEditModel" name=" + noleggio" location="7,446" size="63,13" anchorKind="LastPart"/>
+          <children xsi:type="editmodel:LabelEditModel" name="*" location="65,419" size="5,13" anchorKind="LastPart"/>
         </children>
         <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
       </sourceConnections>
@@ -129,7 +157,7 @@
       <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
       <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="carsharing/Socio&lt;-carsharing/DipendenteSocieta" source="//@children.0/@children.8" target="//@children.0/@children.9/@sourceConnections.0" targetEnd="//@children.0/@children.8/@sourceConnections.0/@children.1" sourceEnd="//@children.0/@children.8/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
         <children xsi:type="editmodel:AssociationEndEditModel" location="173,0" anchorKind="FixedAtEdge" attachSource="true"/>
-        <children xsi:type="editmodel:AssociationEndEditModel" location="20,30"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="1,1"/>
       </sourceConnections>
       <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
     </children>
@@ -140,6 +168,20 @@
       <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.0/@children.8/@sourceConnections.0" autoLocated="true" id="carsharing/Socio&lt;-carsharing/Privato" source="//@children.0/@children.9" target="//@children.0/@children.7" targetEnd="//@children.0/@children.9/@sourceConnections.0/@children.1" sourceEnd="//@children.0/@children.9/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
         <children xsi:type="editmodel:AssociationEndEditModel" location="48,0" anchorKind="FixedAtEdge" attachSource="true"/>
         <children xsi:type="editmodel:AssociationEndEditModel" location="41,30" anchorKind="FixedAtEdge"/>
+      </sourceConnections>
+      <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+    </children>
+    <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@children.7/@sourceConnections.0 //@children.0/@children.0/@sourceConnections.1 //@children.0/@children.4/@sourceConnections.1" name="CarSharing" location="34,78" size="127,30" id="carsharing/CarSharing" runTimeClassModel="">
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <sourceConnections xsi:type="editmodel:AssociationEditModel" id="carsharing/Garage@garage+carsharing/CarSharing@carSharing" source="//@children.0/@children.10" target="//@children.0/@children.2" targetEnd="//@children.0/@children.10/@sourceConnections.0/@children.1" label="//@children.0/@children.10/@sourceConnections.0/@children.2" sourceEnd="//@children.0/@children.10/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+        <children xsi:type="editmodel:AssociationEndEditModel" name="carSharing" location="104,0" id="carsharing/Garage@garage+carsharing/CarSharing@carSharing|carsharing/CarSharing#carSharing" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" name="garage" location="97,10" id="carsharing/Garage@garage+carsharing/CarSharing@carSharing|carsharing/Garage#garage" multiplicityLabel="//@children.0/@children.10/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.0/@children.10/@sourceConnections.0/@children.1/@children.0" navigable="true" orderingKind="1">
+          <children xsi:type="editmodel:LabelEditModel" name=" - garage" location="622,444" size="49,13" anchorKind="LastPart"/>
+          <children xsi:type="editmodel:LabelEditModel" name="*" location="622,417" size="5,13" anchorKind="LastPart"/>
+        </children>
+        <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
       </sourceConnections>
       <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
     </children>

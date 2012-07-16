@@ -3,7 +3,7 @@ package carsharing;
 import java.util.LinkedList;
 
 
-public class Automobile {
+public class Auto {
 
 	/**
 	 * @uml.property  name="noleggio"

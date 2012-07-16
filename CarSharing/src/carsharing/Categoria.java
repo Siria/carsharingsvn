@@ -6,18 +6,18 @@ import java.util.LinkedList;
 public class Categoria {
 
 	/**
-	 * @uml.property  name="automobile"
-	 * @uml.associationEnd  multiplicity="(0 -1)" ordering="true" inverse="categoria:carsharing.Automobile"
-	 * @uml.association  name="appartieneAlla"
+	 * @uml.property   name="automobile"
+	 * @uml.associationEnd   multiplicity="(0 -1)" ordering="true" inverse="categoria:carsharing.Auto"
+	 * @uml.association   name="appartieneAlla"
 	 */
-	private LinkedList<Automobile> automobile;
+	private LinkedList<Auto> automobile;
 
 	/**
 	 * Getter of the property <tt>automobile</tt>
 	 * @return  Returns the automobile.
 	 * @uml.property  name="automobile"
 	 */
-	public LinkedList<Automobile> getAutomobile() {
+	public LinkedList<Auto> getAutomobile() {
 		return automobile;
 	}
 
@@ -26,7 +26,7 @@ public class Categoria {
 	 * @param automobile  The automobile to set.
 	 * @uml.property  name="automobile"
 	 */
-	public void setAutomobile(LinkedList<Automobile> automobile) {
+	public void setAutomobile(LinkedList<Auto> automobile) {
 		this.automobile = automobile;
 	}
 

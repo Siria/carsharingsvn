@@ -3,6 +3,7 @@ package carsharing;
 import java.util.LinkedList;
 
 
+
 public class Socio {
 
 	/**
