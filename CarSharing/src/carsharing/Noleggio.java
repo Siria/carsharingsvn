@@ -1,19 +1,23 @@
 package carsharing;
 
 
+/**
+ * @uml.dependency   supplier="carsharing.Socio"
+ * @uml.dependency   supplier="carsharing.Auto"
+ */
 public class Noleggio {
 
-	/** 
-	 * @uml.property name="garageIniziale"
-	 * @uml.associationEnd multiplicity="(1 1)" inverse="noleggio:carsharing.Garage"
-	 * @uml.association name="presaInConsegna"
+	/**
+	 * @uml.property   name="garageIniziale"
+	 * @uml.associationEnd   multiplicity="(1 1)" inverse="noleggio:carsharing.Garage"
+	 * @uml.association   name="presaInConsegna"
 	 */
 	private Garage garage = new carsharing.Garage();
 
-	/** 
-	 * @uml.property name="garageFinale"
-	 * @uml.associationEnd multiplicity="(1 1)" inverse="noleggio1:carsharing.Garage"
-	 * @uml.association name="rilascio"
+	/**
+	 * @uml.property   name="garageFinale"
+	 * @uml.associationEnd   multiplicity="(1 1)" inverse="noleggio1:carsharing.Garage"
+	 * @uml.association   name="rilascio"
 	 */
 	private Garage garage1 = new carsharing.Garage();
 

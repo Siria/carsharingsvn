@@ -3,6 +3,9 @@ package carsharing;
 import java.util.LinkedList;
 
 
+/**
+ * @uml.dependency   supplier="carsharing.Auto"
+ */
 public class Categoria {
 
 	/**

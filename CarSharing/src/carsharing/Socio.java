@@ -4,6 +4,9 @@ import java.util.LinkedList;
 
 
 
+/**
+ * @uml.dependency   supplier="carsharing.Noleggio"
+ */
 public class Socio {
 
 	/**

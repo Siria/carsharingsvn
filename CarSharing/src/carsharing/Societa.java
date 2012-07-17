@@ -4,12 +4,15 @@ package carsharing;
 import java.util.LinkedList;
 
 
+/**
+ * @uml.dependency   supplier="carsharing.DipendenteSocieta"
+ */
 public class Societa {
 
-	/** 
-	 * @uml.property name="dipendenteSocieta"
-	 * @uml.associationEnd multiplicity="(0 -1)" ordering="true" inverse="societa:carsharing.DipendenteSocieta"
-	 * @uml.association name="lavora"
+	/**
+	 * @uml.property   name="dipendenteSocieta"
+	 * @uml.associationEnd   multiplicity="(0 -1)" ordering="true" inverse="societa:carsharing.DipendenteSocieta"
+	 * @uml.association   name="lavora"
 	 */
 	private LinkedList<DipendenteSocieta> dipendenteSocieta;
 

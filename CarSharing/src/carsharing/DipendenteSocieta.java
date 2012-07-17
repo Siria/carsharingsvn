@@ -1,12 +1,16 @@
 package carsharing;
 
 
+/**
+ * @uml.dependency   supplier="carsharing.Socio"
+ * @uml.dependency   supplier="carsharing.Societa"
+ */
 public class DipendenteSocieta extends Socio {
 
-	/** 
-	 * @uml.property name="societa"
-	 * @uml.associationEnd multiplicity="(1 1)" inverse="dipendenteSocieta:carsharing.Societa"
-	 * @uml.association name="lavora"
+	/**
+	 * @uml.property   name="societa"
+	 * @uml.associationEnd   multiplicity="(1 1)" inverse="dipendenteSocieta:carsharing.Societa"
+	 * @uml.association   name="lavora"
 	 */
 	private Societa societa = new carsharing.Societa();
 

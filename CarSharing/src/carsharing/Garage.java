@@ -3,12 +3,15 @@ package carsharing;
 import java.util.LinkedList;
 
 
+/**
+ * @uml.dependency   supplier="carsharing.Noleggio"
+ */
 public class Garage {
 
-	/** 
-	 * @uml.property name="noleggio"
-	 * @uml.associationEnd multiplicity="(0 -1)" ordering="true" inverse="garageIniziale:carsharing.Noleggio"
-	 * @uml.association name="presaInConsegna"
+	/**
+	 * @uml.property   name="noleggio"
+	 * @uml.associationEnd   multiplicity="(0 -1)" ordering="true" inverse="garageIniziale:carsharing.Noleggio"
+	 * @uml.association   name="presaInConsegna"
 	 */
 	private LinkedList<Noleggio> noleggio;
 
@@ -21,10 +24,10 @@ public class Garage {
 		return noleggio;
 	}
 
-	/** 
-	 * @uml.property name="noleggio1"
-	 * @uml.associationEnd multiplicity="(0 -1)" ordering="true" inverse="garageFinale:carsharing.Noleggio"
-	 * @uml.association name="rilascio"
+	/**
+	 * @uml.property   name="noleggio1"
+	 * @uml.associationEnd   multiplicity="(0 -1)" ordering="true" inverse="garageFinale:carsharing.Noleggio"
+	 * @uml.association   name="rilascio"
 	 */
 	private LinkedList<Noleggio> noleggio1;
 
